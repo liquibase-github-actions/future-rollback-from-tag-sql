@@ -6,7 +6,7 @@ Generates SQL to revert future changes up to the specified tag
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/future-rollback-from-tag-sql@v4.31.0
+- uses: liquibase-github-actions/future-rollback-from-tag-sql@v4.31.1
   with:
     # The root changelog file
     # string
@@ -95,7 +95,7 @@ The liquibase future rollback from tag sql action accepts all valid liquibase gl
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/future-rollback-from-tag-sql@v4.31.0
+  - uses: liquibase-github-actions/future-rollback-from-tag-sql@v4.31.1
     with:
       changelogFile: ""
       tag: ""
